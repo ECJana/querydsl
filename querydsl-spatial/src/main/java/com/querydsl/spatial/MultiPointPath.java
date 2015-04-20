@@ -20,6 +20,9 @@ import org.geolatte.geom.MultiPoint;
 import com.querydsl.core.types.*;
 
 /**
+ * {@code MultiPointPath} extends {@link MultiPointExpression} to implement the
+ * {@link Path} interface
+ *
  * @author tiwe
  *
  * @param <T>

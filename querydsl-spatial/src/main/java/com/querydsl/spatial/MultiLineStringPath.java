@@ -20,6 +20,9 @@ import org.geolatte.geom.MultiLineString;
 import com.querydsl.core.types.*;
 
 /**
+ * {@code MultiLineStringPath} extends {@link MultiLineStringExpression} to implement the
+ * {@link Path} interface
+ *
  * @author tiwe
  *
  * @param <T>

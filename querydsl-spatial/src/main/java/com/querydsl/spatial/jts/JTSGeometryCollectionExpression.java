@@ -24,7 +24,7 @@ import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryCollection;
 
 /**
- * A GeometryCollection is a geometric object that is a collection of some number of geometric objects.
+ * A Geometry collection is a geometric object that is a collection of some number of geometric objects.
  *
  * @author tiwe
  *
