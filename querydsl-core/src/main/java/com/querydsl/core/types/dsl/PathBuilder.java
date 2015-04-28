@@ -26,9 +26,10 @@ import com.querydsl.core.types.PathMetadata;
 import com.querydsl.core.types.PathMetadataFactory;
 
 /**
- * PathBuilder is an extension to EntityPathBase for dynamic path construction
+ * {@code PathBuilder} is an extension to {@link EntityPathBase} for dynamic path construction
  *
  * <p>Usage example:</p>
+ *
  * <pre>{@code
  * PathBuilder<User> user = new PathBuilder<User>(User.class, "user");
  * Predicate filter = user.getString("firstName").eq("Bob");
@@ -121,7 +122,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a PathBuilder instance for the given property
+     * Create a PathBuilder instance for the given property
      *
      * @param property property name
      * @return
@@ -138,7 +139,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a PathBuilder for the given property with the given type
+     * Create a PathBuilder for the given property with the given type
      *
      * @param <A>
      * @param property property name
@@ -157,7 +158,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a PArray instance for the given property and the given array type
+     * Create a PArray instance for the given property and the given array type
      *
      * @param <A>
      * @param <E>
@@ -180,7 +181,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Boolean typed path
+     * Create a new Boolean typed path
      *
      * @param propertyName property name
      * @return
@@ -191,7 +192,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Collection typed path
+     * Create a new Collection typed path
      *
      * @param <A>
      * @param property property name
@@ -203,7 +204,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Collection typed path
+     * Create a new Collection typed path
      *
      * @param <A>
      * @param <E>
@@ -229,7 +230,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Comparable typed path
+     * Create a new Comparable typed path
      *
      * @param <A>
      * @param property property name
@@ -253,7 +254,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Date path
+     * Create a new Date path
      *
      * @param <A>
      * @param property property name
@@ -277,7 +278,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new DateTime path
+     * Create a new DateTime path
      *
      * @param <A>
      * @param property property name
@@ -290,7 +291,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Enum path
+     * Create a new Enum path
      *
      * @param <A>
      * @param property property name
@@ -314,7 +315,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new List typed path
+     * Create a new List typed path
      *
      * @param <A>
      * @param property property name
@@ -326,7 +327,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new List typed path
+     * Create a new List typed path
      *
      * @param <A>
      * @param <E>
@@ -341,7 +342,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Map typed path
+     * Create a new Map typed path
      *
      * @param <K>
      * @param <V>
@@ -355,7 +356,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Map typed path
+     * Create a new Map typed path
      *
      * @param <K>
      * @param <V>
@@ -383,7 +384,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Number typed path
+     * Create a new Number typed path
      *
      * @param <A>
      * @param property property name
@@ -396,7 +397,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Set typed path
+     * Create a new Set typed path
      *
      * @param <A>
      * @param property property name
@@ -408,7 +409,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Set typed path
+     * Create a new Set typed path
      *
      * @param <A>
      * @param <E>
@@ -434,7 +435,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Simple path
+     * Create a new Simple path
      *
      * @param <A>
      * @param property property name
@@ -456,7 +457,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new String typed path
+     * Create a new String typed path
      *
      * @param property property name
      * @return
@@ -477,7 +478,7 @@ public class PathBuilder<T> extends EntityPathBase<T> {
     }
 
     /**
-     * Get a new Time typed path
+     * Create a new Time typed path
      *
      * @param <A>
      * @param property property name

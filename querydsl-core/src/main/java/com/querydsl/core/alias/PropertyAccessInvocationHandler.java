@@ -27,20 +27,16 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
-
 import com.google.common.collect.ImmutableList;
-import com.querydsl.core.types.Expression;
-import com.querydsl.core.types.ParameterizedExpression;
-import com.querydsl.core.types.Path;
-import com.querydsl.core.types.PathMetadata;
-import com.querydsl.core.types.PathMetadataFactory;
+import com.querydsl.core.types.*;
 import com.querydsl.core.util.BeanUtils;
 import com.querydsl.core.util.ReflectionUtils;
 
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
 /**
- * PropertyAccessInvocationHandler is the main InvocationHandler class for the
+ * {@code PropertyAccessInvocationHandler} is the main InvocationHandler class for the
  * CGLIB alias proxies
  *
  * @author tiwe

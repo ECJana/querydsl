@@ -22,7 +22,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Config defines serialization flags for annotated domain types and packages
+ * {@code Config} defines serialization flags for annotated domain types and packages
  *
  * @author tiwe
  *

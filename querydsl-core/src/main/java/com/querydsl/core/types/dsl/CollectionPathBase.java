@@ -25,7 +25,7 @@ import com.querydsl.core.types.PathImpl;
 import com.querydsl.core.types.PathMetadata;
 
 /**
- * CollectionPath is a base class for collection typed paths
+ * {@code CollectionPath} is a base class for collection typed paths
  * 
  * @author tiwe
  *

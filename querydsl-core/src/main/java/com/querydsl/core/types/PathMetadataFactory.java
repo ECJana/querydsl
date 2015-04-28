@@ -16,7 +16,7 @@ package com.querydsl.core.types;
 import javax.annotation.Nonnegative;
 
 /**
- * PathMetadataFactory is a factory class for {@link Path} construction
+ * {@code PathMetadataFactory} is a factory class for {@link Path} construction
  * 
  * @author tiwe
  *

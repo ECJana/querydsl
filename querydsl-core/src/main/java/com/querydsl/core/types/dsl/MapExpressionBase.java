@@ -23,7 +23,7 @@ import com.querydsl.core.types.MapExpression;
 import com.querydsl.core.types.Ops;
 
 /**
- * MapExpressionBase is an abstract base class for {@link MapExpression} implementations
+ * {@code MapExpressionBase} is an abstract base class for {@link MapExpression} implementations
  *
  * @author tiwe
  *

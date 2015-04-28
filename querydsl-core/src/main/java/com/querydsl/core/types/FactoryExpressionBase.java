@@ -1,10 +1,11 @@
 package com.querydsl.core.types;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 /**
- * Common superclass for FactoryExpression implementations
+ * Common superclass for {@link FactoryExpression} implementations
  *
  * @param <T>
  */

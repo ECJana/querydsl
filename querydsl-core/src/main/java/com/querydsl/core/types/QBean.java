@@ -29,7 +29,7 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.primitives.Primitives;
 
 /**
- * QBean is a JavaBean populating projection type
+ * {@code QBean} is a JavaBean populating projection type
  *
  * <p>Example</p>
  *

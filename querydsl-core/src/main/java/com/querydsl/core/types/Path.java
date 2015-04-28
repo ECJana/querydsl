@@ -16,7 +16,7 @@ package com.querydsl.core.types;
 import java.lang.reflect.AnnotatedElement;
 
 /**
- * Path represents a path expression. Paths refer to variables, properties and collection members access.
+ * {@code Path} represents a path expression. Paths refer to variables, properties and collection members access.
  * 
  * @author tiwe
  */

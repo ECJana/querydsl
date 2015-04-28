@@ -20,7 +20,7 @@ import com.querydsl.core.types.Expression;
 import com.querydsl.core.types.Ops;
 
 /**
- * LiteralExpression represents literal expressions
+ * {@code LiteralExpression} represents literal expressions
  *
  * @param <T>
  */
@@ -37,7 +37,7 @@ public abstract class LiteralExpression<T extends Comparable> extends Comparable
      * Create a cast expression to the given numeric type
      *
      * @param <A>
-     * @param type
+     * @param type numeric type
      * @return
      */
     public <A extends Number & Comparable<? super A>> NumberExpression<A> castToNum(Class<A> type) {
@@ -45,7 +45,7 @@ public abstract class LiteralExpression<T extends Comparable> extends Comparable
     }
 
     /**
-     * Get a cast to String expression
+     * Create a cast to String expression
      *
      * @see     java.lang.Object#toString()
      * @return

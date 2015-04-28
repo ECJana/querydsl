@@ -23,7 +23,7 @@ import com.querydsl.core.util.BeanUtils;
 import com.querydsl.core.util.ReflectionUtils;
 
 /**
- * PathBuilderValidator validates PathBuilder properties at creation time
+ * {@code PathBuilderValidator} validates {@link PathBuilder} properties at creation time
  */
 public interface PathBuilderValidator {
 

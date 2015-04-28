@@ -16,7 +16,7 @@ package com.querydsl.core.types;
 import java.io.Serializable;
 
 /**
- * Operator represents operator symbols.
+ * {@code Operator} represents operator symbols.
  * <p>Implementations should be enums for automatic instance management.</p>
  *
  * @author tiwe

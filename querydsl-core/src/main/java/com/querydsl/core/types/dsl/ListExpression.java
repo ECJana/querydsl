@@ -21,7 +21,7 @@ import com.querydsl.core.types.CollectionExpression;
 import com.querydsl.core.types.Expression;
 
 /**
- * ListExpression represents {@link java.util.List} typed expressions
+ * {@code ListExpression} represents {@link java.util.List} typed expressions
  *
  * @author tiwe
  *
@@ -33,7 +33,7 @@ public interface ListExpression<E, Q extends SimpleExpression<? super E>> extend
     /**
      * Indexed access
      *
-     * @param index
+     * @param index zero based index
      * @return this.get(index)
      * @see java.util.List#get(int)
      */
@@ -42,7 +42,7 @@ public interface ListExpression<E, Q extends SimpleExpression<? super E>> extend
     /**
      * Indexed access
      *
-     * @param index
+     * @param index zero based index
      * @return this.get(index)
      * @see java.util.List#get(int)
      */

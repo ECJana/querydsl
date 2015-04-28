@@ -14,7 +14,7 @@
 package com.querydsl.core.alias;
 
 /**
- * TypeSystem defines an interface for detecting whether a given class confirms to certain Collection
+ * {@code TypeSystem} defines an interface for detecting whether a given class confirms to certain Collection
  * contract
  * 
  * @author tiwe
@@ -23,25 +23,33 @@ package com.querydsl.core.alias;
 public interface TypeSystem {
     
     /**
-     * @param cl
+     * Return whether the given class is a collection class
+     *
+     * @param cl class to check
      * @return
      */
     boolean isCollectionType(Class<?> cl);
     
     /**
-     * @param cl
+     * Return whether the given class is a set class
+     *
+     * @param cl class to check
      * @return
      */
     boolean isSetType(Class<?> cl);
     
     /**
-     * @param cl
+     * Return whether the given class is a list class
+     *
+     * @param cl class to check
      * @return
      */
     boolean isListType(Class<?> cl);
     
     /**
-     * @param cl
+     * Return whether the given class is a map class
+     *
+     * @param cl class to check
      * @return
      */
     boolean isMapType(Class<?> cl);

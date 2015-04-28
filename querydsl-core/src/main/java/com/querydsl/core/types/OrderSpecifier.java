@@ -18,7 +18,7 @@ import java.io.Serializable;
 import javax.annotation.concurrent.Immutable;
 
 /**
- * OrderSpecifier represents an order-by-element in a Query instance
+ * {@code OrderSpecifier} represents an order-by-element in a Query instance
  *
  * @param <T> related expression type
  * @author tiwe

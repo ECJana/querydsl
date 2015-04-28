@@ -14,7 +14,7 @@
 package com.querydsl.core.types;
 
 /**
- * ParameterizedExpression is a common interface for expressions with generic type parameters
+ * {@code ParameterizedExpression} is a common interface for expressions with generic type parameters
  *
  * @author tiwe
  *

@@ -26,7 +26,7 @@ import com.querydsl.core.types.ParamExpression;
 import com.querydsl.core.types.Predicate;
 
 /**
- * QueryMetadata defines query metadata such as query sources, filtering
+ * {@code QueryMetadata} defines query metadata such as query sources, filtering
  * conditions and the projection
  *
  * @author tiwe
@@ -36,50 +36,50 @@ public interface QueryMetadata extends Serializable {
     /**
      * Add the given group by expressions
      *
-     * @param o
+     * @param o group by expressions
      */
     void addGroupBy(Expression<?> o);
 
     /**
      * Add the given having expressions
      *
-     * @param o
+     * @param o having conditions
      */
     void addHaving(Predicate o);
 
     /**
      * Add the given query join
      *
-     * @param joinType
-     * @param expr
+     * @param joinType type of join
+     * @param expr join target
      */
     void addJoin(JoinType joinType, Expression<?> expr);
 
     /**
      * Add the given join flag to the last given join
      *
-     * @param flag
+     * @param flag join flag
      */
     void addJoinFlag(JoinFlag flag);
 
     /**
      * Add the given join condition to the last given join
      *
-     * @param o
+     * @param o join condition
      */
     void addJoinCondition(Predicate o);
 
     /**
      * Add the given order specifiers
      *
-     * @param o
+     * @param o order
      */
     void addOrderBy(OrderSpecifier<?> o);
 
     /**
      * Add the given where expressions
      *
-     * @param o
+     * @param o where condition
      */
     void addWhere(Predicate o);
 
@@ -96,7 +96,7 @@ public interface QueryMetadata extends Serializable {
     /**
      * Clone this QueryMetadata instance
      *
-     * @return
+     * @return new QueryMetadata instance with cloned state
      */
     QueryMetadata clone();
 
@@ -180,21 +180,29 @@ public interface QueryMetadata extends Serializable {
     void reset();
 
     /**
+     * Set the distinct flag
+     *
      * @param distinct
      */
     void setDistinct(boolean distinct);
 
     /**
+     * Set the maxmium amount of rows
+     *
      * @param limit
      */
     void setLimit(@Nullable Long limit);
 
     /**
+     * Set the query modifiers limit and offset
+     *
      * @param restriction
      */
     void setModifiers(QueryModifiers restriction);
 
     /**
+     * Set the amount of skipped rows
+     *
      * @param offset
      */
     void setOffset(@Nullable Long offset);
@@ -205,6 +213,8 @@ public interface QueryMetadata extends Serializable {
     void setUnique(boolean unique);
 
     /**
+     * Bind the value for the given parameter expression
+     *
      * @param <T>
      * @param param
      * @param value
@@ -212,32 +222,44 @@ public interface QueryMetadata extends Serializable {
     <T> void setParam(ParamExpression<T> param, T value);
 
     /**
+     * Set the projection
+     *
      * @param o
      */
     void setProjection(Expression<?> o);
 
     /**
+     * Add the given query flag
+     *
      * @param flag
      */
     void addFlag(QueryFlag flag);
 
     /**
+     * Return whether the given query flag is applied
+     *
      * @param flag
      * @return
      */
     boolean hasFlag(QueryFlag flag);
 
     /**
+     * Remove the given query flag
+     *
      * @param flag
      */
     void removeFlag(QueryFlag flag);
 
     /**
+     * Get all query flags
+     *
      * @return
      */
     Set<QueryFlag> getFlags();
 
     /**
+     * Set the validate flag
+     *
      * @param v
      */
     void setValidate(boolean v);

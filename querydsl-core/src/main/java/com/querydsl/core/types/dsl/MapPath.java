@@ -23,7 +23,7 @@ import javax.annotation.Nullable;
 import com.querydsl.core.types.*;
 
 /**
- * MapPath represents map paths
+ * {@code MapPath} represents map paths
  *
  * @author tiwe
  *

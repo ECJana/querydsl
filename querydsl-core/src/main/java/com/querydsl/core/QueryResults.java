@@ -21,7 +21,7 @@ import javax.annotation.Nullable;
 import com.google.common.collect.ImmutableList;
 
 /**
- * QueryResults bundles data for paged query results
+ * {@code QueryResults} bundles data for paged query results
  *
  * @author tiwe
  */
@@ -88,6 +88,8 @@ public final class QueryResults<T> implements Serializable {
     }
 
     /**
+     * Return whether there are results in the current query window
+     *
      * @return
      */
     public boolean isEmpty() {
@@ -95,6 +97,8 @@ public final class QueryResults<T> implements Serializable {
     }
 
     /**
+     * Get the limit value used for the query
+     *
      * @return
      */
     public long getLimit() {
@@ -102,6 +106,8 @@ public final class QueryResults<T> implements Serializable {
     }
 
     /**
+     * Get the offset value used for the query
+     *
      * @return
      */
     public long getOffset() {

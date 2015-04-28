@@ -31,7 +31,7 @@ import com.querydsl.core.types.Path;
 import com.querydsl.core.types.dsl.*;
 
 /**
- * Alias provides alias factory methods
+ * {@code Alias} provides alias factory methods
  *
  * @author tiwe
  */
@@ -174,8 +174,8 @@ public final class Alias {
     /**
      * Create a new alias proxy of the given type
      * 
-     * @param cl
-     * @return
+     * @param cl type of the alias
+     * @return alias instance
      */
     public static <A> A alias(Class<A> cl) {
         return alias(cl, CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_CAMEL, cl.getSimpleName()));
@@ -184,9 +184,9 @@ public final class Alias {
     /**
      * Create a new alias proxy of the given type for the given expression
      * 
-     * @param cl
-     * @param expr
-     * @return
+     * @param cl type of the alias
+     * @param expr underlying expression
+     * @return alias instance
      */
     public static <A> A alias(Class<A> cl, Expression<? extends A> expr) {
         return aliasFactory.createAliasForExpr(cl, expr);
@@ -195,9 +195,9 @@ public final class Alias {
     /**
      * Create a new alias proxy of the given type for the given variable
      * 
-     * @param cl
-     * @param var
-     * @return
+     * @param cl type of the alias
+     * @param var variable name for the underlying expression
+     * @return alias instance
      */
     public static <A> A alias(Class<A> cl, String var) {
         return aliasFactory.createAliasForVariable(cl, var);
@@ -207,8 +207,8 @@ public final class Alias {
      * Convert the given alias to an expression
      *
      * @param <D>
-     * @param arg
-     * @return
+     * @param arg alias instance
+     * @return underlying expression
      */
     @SuppressWarnings("unchecked")
     public static <D> Expression<D> getAny(D arg) {
@@ -222,6 +222,9 @@ public final class Alias {
         }
     }
 
+    /**
+     * Reset the alias
+     */
     public static void resetAlias() {
         aliasFactory.reset();
     }
@@ -246,6 +249,7 @@ public final class Alias {
         String var = "var"+ arg.getClass().getSimpleName() + "_" + arg.toString().replace(' ', '_');
         return new PathBuilder<D>((Class)arg.getClass(), var);
     }
+
 
     public static StringPath var(String arg) {
         return Expressions.stringPath(arg.replace(' ', '_'));

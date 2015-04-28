@@ -14,7 +14,7 @@
 package com.querydsl.core.types;
 
 /**
- * ParamExpression defines named and unnamed parameters in queries
+ * {@code ParamExpression} defines named and unnamed parameters in queries
  *
  * @author tiwe
  *

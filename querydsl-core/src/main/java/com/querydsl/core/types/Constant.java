@@ -14,7 +14,7 @@
 package com.querydsl.core.types;
 
 /**
- * Constant represents a general constant expression.
+ * {@code Constant} represents a general constant expression.
  *
  * @author tiwe
  *

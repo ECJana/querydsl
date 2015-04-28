@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableList;
 import com.querydsl.core.types.*;
 
 /**
- * SimpleExpression is the base class for Expression implementations.
+ * {@code SimpleExpression} is the base class for {@link Expression} implementations.
  *
  * @author tiwe
  *
@@ -48,7 +48,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     /**
      * Create an alias for the expression
      *
-     * @return
+     * @return alias expression
      */
     @Override
     public SimpleExpression<T> as(Path<T> alias) {
@@ -58,7 +58,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     /**
      * Create an alias for the expression
      *
-     * @return
+     * @return alias expression
      */
     @Override
     public SimpleExpression<T> as(String alias) {
@@ -115,7 +115,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this == right} expression
+     * Create a {@code this == right} expression
      *
      * <p>Use expr.isNull() instead of expr.eq(null)</p>
      *
@@ -131,7 +131,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this == right} expression
+     * Create a {@code this == right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -174,7 +174,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
 
 
     /**
-     * Get a {@code this in right} expression
+     * Create a {@code this in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -188,7 +188,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this in right} expression
+     * Create a {@code this in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -202,7 +202,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this in right} expression
+     * Create a {@code this in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -212,7 +212,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this in right} expression
+     * Create a {@code this in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -222,7 +222,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this <> right} expression
+     * Create a {@code this <> right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -236,7 +236,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this <> right} expression
+     * Create a {@code this <> right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -262,7 +262,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this not in right} expression
+     * Create a {@code this not in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -276,7 +276,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this not in right} expression
+     * Create a {@code this not in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -290,7 +290,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this not in right} expression
+     * Create a {@code this not in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -300,7 +300,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code this not in right} expression
+     * Create a {@code this not in right} expression
      *
      * @param right rhs of the comparison
      * @return
@@ -312,7 +312,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
 
 
     /**
-     * Get a {@code nullif(this, other)} expression
+     * Create a {@code nullif(this, other)} expression
      *
      * @param other
      * @return
@@ -322,7 +322,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a {@code nullif(this, other)} expression
+     * Create a {@code nullif(this, other)} expression
      *
      * @param other
      * @return
@@ -332,7 +332,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a case expression builder
+     * Create a case expression builder
      *
      * @param other
      * @return
@@ -342,7 +342,7 @@ public abstract class SimpleExpression<T> extends DslExpression<T> {
     }
 
     /**
-     * Get a case expression builder
+     * Create a case expression builder
      *
      * @param other
      * @return

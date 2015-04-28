@@ -18,7 +18,7 @@ import com.querydsl.core.types.ParamExpressionImpl;
 import com.querydsl.core.types.Visitor;
 
 /**
- * Param defines a parameter in a query with an optional name
+ * {@code Param} defines a parameter in a query with an optional name
  *
  * @author tiwe
  *

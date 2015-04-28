@@ -16,7 +16,7 @@ package com.querydsl.core.types;
 import java.util.List;
 
 /**
- * TemplateExpression provides base types for custom expressions with integrated
+ * {@code TemplateExpression} provides base types for custom expressions with integrated
  * serialization templates
  *
  * @author tiwe

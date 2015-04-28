@@ -18,7 +18,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 /**
- * FactoryExpression represents factory expressions such as JavaBean or 
+ * {@code FactoryExpression} represents factory expressions such as JavaBean or
  * Constructor projections
  * 
  * @author tiwe

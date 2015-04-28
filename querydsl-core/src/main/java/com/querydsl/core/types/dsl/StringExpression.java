@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 import com.querydsl.core.types.*;
 
 /**
- * StringExpression represents {@link java.lang.String} expressions
+ * {@code StringExpression} represents {@link java.lang.String} expressions
  *
  * @author tiwe
  * @see java.lang.String
@@ -56,7 +56,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the concatenation of this and str
      *
-     * @param str
+     * @param str string to append
      * @return this + str
      */
     public StringExpression append(Expression<String> str) {
@@ -66,7 +66,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the concatenation of this and str
      *
-     * @param str
+     * @param str string to append
      * @return this + str
      */
     public StringExpression append(String str) {
@@ -76,7 +76,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the character at the given index
      *
-     * @param i
+     * @param i zero based index
      * @return this.charAt(i)
      * @see java.lang.String#charAt(int)
      */
@@ -87,7 +87,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the character at the given index
      *
-     * @param i
+     * @param i zero based index
      * @return this.charAt(i)
      * @see java.lang.String#charAt(int)
      */
@@ -98,7 +98,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the concatenation of this and str
      *
-     * @param str
+     * @param str string to append
      * @return this + str
      */
     public StringExpression concat(Expression<String> str) {
@@ -108,7 +108,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     /**
      * Get the concatenation of this and str
      *
-     * @param str
+     * @param str string to append
      * @return this + str
      */
     public StringExpression concat(String str) {
@@ -138,6 +138,8 @@ public abstract class StringExpression extends LiteralExpression<String> {
     }
 
     /**
+     * Returns true if the given String is contained, compare case insensitively
+     *
      * @param str
      * @return
      */
@@ -146,6 +148,8 @@ public abstract class StringExpression extends LiteralExpression<String> {
     }
 
     /**
+     * Returns true if the given String is contained, compare case insensitively
+     *
      * @param str
      * @return
      */
@@ -165,6 +169,8 @@ public abstract class StringExpression extends LiteralExpression<String> {
     }
 
     /**
+     * Returns true if this ends with str, compares case insensitively
+     *
      * @param str
      * @return
      */
@@ -184,6 +190,8 @@ public abstract class StringExpression extends LiteralExpression<String> {
     }
 
     /**
+     * Returns true if this ends with str, compares case insensitively
+     *
      * @param str
      * @return
      */
@@ -241,7 +249,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
      * Get the index of the given substring in this String, starting from the given index
      *
      * @param str
-     * @param i
+     * @param i zero based index
      * @return this.indexOf(str, i)
      * @see java.lang.String#indexOf(String, int)
      */
@@ -253,7 +261,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
      * Get the index of the given substring in this String, starting from the given index
      *
      * @param str
-     * @param i
+     * @param i zero based index
      * @return
      */
     public NumberExpression<Integer> indexOf(Expression<String> str, int i) {
@@ -660,7 +668,7 @@ public abstract class StringExpression extends LiteralExpression<String> {
     }
 
     /**
-     * Get a copy of the string, with leading and trailing whitespace
+     * Create a copy of the string, with leading and trailing whitespace
      * omitted.
      *
      * @return

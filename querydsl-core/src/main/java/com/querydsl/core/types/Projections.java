@@ -18,7 +18,7 @@ import java.util.Map;
 import com.google.common.collect.ImmutableList;
 
 /**
- * Factory class for FactoryExpression instances
+ * Factory class for {@link FactoryExpression} instances
  * 
  * @author tiwe
  *

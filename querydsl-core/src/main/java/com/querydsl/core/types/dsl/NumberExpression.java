@@ -23,7 +23,7 @@ import com.querydsl.core.types.Ops.MathOps;
 import com.querydsl.core.util.MathUtils;
 
 /**
- * NumberExpression represents a numeric expression
+ * {@code NumberExpression} represents a numeric expression
  *
  * @author tiwe
  *
@@ -90,7 +90,7 @@ public abstract class NumberExpression<T extends Number & Comparable<?>> extends
     }
 
     /**
-     * Get a cast to String expression
+     * Create a cast to String expression
      *
      * @see     java.lang.Object#toString()
      * @return

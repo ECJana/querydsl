@@ -16,7 +16,7 @@ package com.querydsl.core.types;
 import java.util.List;
 
 /**
- * Operation represents an operation with operator and arguments
+ * {@code Operation} represents an operation with operator and arguments
  *
  * @author tiwe
  */
