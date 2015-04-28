@@ -20,7 +20,7 @@ import com.querydsl.core.QueryMetadata;
 import com.querydsl.core.types.Expression;
 
 /**
- * QueryEngine defines an interface for the evaluation of ColQuery queries
+ * {@code QueryEngine} defines an interface for the evaluation of ColQuery queries
  *
  * @author tiwe
  *

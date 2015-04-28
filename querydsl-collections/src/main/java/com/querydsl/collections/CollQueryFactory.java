@@ -20,7 +20,7 @@ import com.querydsl.core.alias.Alias;
 import com.querydsl.core.types.Path;
 
 /**
- * CollQueryFactory provides static convenience methods for query construction
+ * {@code CollQueryFactory} provides static convenience methods for query construction
  *
  * @author tiwe
  */

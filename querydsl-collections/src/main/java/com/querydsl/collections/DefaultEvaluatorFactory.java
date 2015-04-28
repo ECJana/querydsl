@@ -43,7 +43,7 @@ import com.querydsl.core.types.ParamNotSetException;
 import com.querydsl.core.types.Predicate;
 
 /**
- * DefaultEvaluatorFactory provides Java source templates for evaluation of CollQuery queries
+ * {@code DefaultEvaluatorFactory} provides Java source templates for evaluation of {@link CollQuery} queries
  *
  * @author tiwe
  *
@@ -86,8 +86,9 @@ public class DefaultEvaluatorFactory {
      * Create an Evaluator for the given query sources and projection
      *
      * @param <T>
-     * @param sources
-     * @param projection
+     * @param metadata query metadata
+     * @param sources sources of the query
+     * @param projection projection of the query
      * @return
      */
     public <T> Evaluator<T> create(QueryMetadata metadata, List<? extends Expression<?>> sources,
@@ -129,8 +130,8 @@ public class DefaultEvaluatorFactory {
      * Create an Evaluator for the given source and filter
      *
      * @param <T>
-     * @param source
-     * @param filter
+     * @param source source of the query
+     * @param filter filter of the query
      * @return
      */
     public <T> Evaluator<List<T>> createEvaluator(QueryMetadata metadata,

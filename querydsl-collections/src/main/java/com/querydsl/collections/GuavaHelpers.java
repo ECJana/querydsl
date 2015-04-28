@@ -24,7 +24,7 @@ import com.querydsl.core.types.PathExtractor;
 import com.querydsl.core.types.Predicate;
 
 /**
- * GuavaHelpers provides functionality to wrap Querydsl {@link Predicate} instances to Guava predicates
+ * {@code GuavaHelpers} provides functionality to wrap Querydsl {@link Predicate} instances to Guava predicates
  * and Querydsl {@link Expression} instances to Guava functions 
  * 
  * @author tiwe
